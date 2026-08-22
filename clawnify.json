@@ -1,6 +1,6 @@
 {
   "$schema": "https://app.clawnify.com/schema/v1/clawnify.json",
-  "name": "Open SEO",
+  "name": "OpenSEO",
   "description": "AI SEO content engine for WordPress. Plan topical clusters, generate people-first articles, and auto-publish them to your site on a schedule. An open alternative to Surfer and Frase.",
   "icon": "icon.svg",
   "template": {

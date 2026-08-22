@@ -260,7 +260,7 @@ async function complete(
       Authorization: `Bearer ${apiKey}`,
       "Content-Type": "application/json",
       "HTTP-Referer": "https://clawnify.com",
-      "X-Title": "Open SEO",
+      "X-Title": "OpenSEO",
     },
     body: JSON.stringify({
       model,

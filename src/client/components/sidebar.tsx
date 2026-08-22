@@ -21,7 +21,7 @@ export function Sidebar({ current, navigate }: { current: View; navigate: (p: st
         <span class="flex h-7 w-7 items-center justify-center rounded-md bg-primary text-on-primary">
           <Search size={16} strokeWidth={2.5} />
         </span>
-        <span class="text-[15px] font-bold tracking-tight">Open SEO</span>
+        <span class="text-[15px] font-bold tracking-tight">OpenSEO</span>
       </button>
 
       <nav class="mt-2 px-3">
