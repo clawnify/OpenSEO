@@ -2,7 +2,7 @@
 
 # OpenSEO: The Open-Source Surfer & Frase Alternative
 
-[![Deploy with Clawnify](https://app.clawnify.com/deploy-button.svg)](https://app.clawnify.com/deploy?repo=clawnify/open-seo)
+[![Deploy with Clawnify](https://app.clawnify.com/deploy-button.svg)](https://app.clawnify.com/deploy?repo=clawnify/OpenSEO)
 
 An AI SEO content engine for WordPress. Plan topical clusters, generate people-first articles, and auto-publish them to your site on a schedule. Built with **Preact + Tailwind CSS + Hono + D1**. Deploys to Cloudflare Workers via [Clawnify](https://clawnify.com).
 
@@ -53,7 +53,7 @@ The same connection powers **Measure's keyword rankings**: for each published ar
 ## Quickstart
 
 ```bash
-git clone https://github.com/clawnify/open-seo.git
+git clone https://github.com/clawnify/OpenSEO.git
 cd open-seo
 pnpm install
 pnpm dev
