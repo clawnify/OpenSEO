@@ -90,6 +90,8 @@ Design follows the Clawnify Apps system — see `DESIGN.md`.
 ## Architecture
 
 ```
+schema.sql          -- content_plans + posts
+demo/seed.sql       -- fictional sample data for the Clawnify demo workspace
 src/
   server/
     index.ts        -- Hono API: research, plans, posts, generate, publish, calendar, stats
@@ -100,7 +102,6 @@ src/
     wordpress.ts    -- WordPress publish seam (credentials + REST)
     queue.ts        -- Clawnify managed-queue scheduling adapter
     db.ts           -- D1 adapter (@clawnify/db)
-    schema.sql      -- content_plans + posts
   client/
     app.tsx         -- Root component with router
     components/     -- sidebar, dashboard, pipeline, calendar, plans, composer
