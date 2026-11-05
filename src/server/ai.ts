@@ -11,7 +11,7 @@
 
 import { secret, type ConnectionsEnv } from "@clawnify/connections";
 
-const DEFAULT_MODEL = "anthropic/claude-sonnet-4";
+const DEFAULT_MODEL = "~anthropic/claude-sonnet-latest";
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
 
 export interface PlanContext {
