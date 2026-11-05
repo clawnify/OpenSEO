@@ -79,7 +79,7 @@ In production (deployed via Clawnify), all of these are injected automatically f
 | **Frontend** | Preact, TypeScript, Tailwind CSS v4, Vite |
 | **Backend** | Hono (Cloudflare Worker) |
 | **Database** | D1 (SQLite at the edge) |
-| **Generation** | OpenRouter (`anthropic/claude-sonnet-4` by default, override via `SEO_MODEL`) |
+| **Generation** | OpenRouter (`~anthropic/claude-sonnet-latest`, the newest Claude Sonnet, by default; override via `SEO_MODEL`) |
 | **Search data** | SerpAPI via Clawnify Integrations (`@clawnify/connections`), AI-estimated fallback |
 | **Scheduling** | Clawnify managed queue |
 | **Publishing** | WordPress REST API (Application Password) |
