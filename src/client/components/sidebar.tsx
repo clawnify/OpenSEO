@@ -1,3 +1,4 @@
+import type { ComponentChildren } from "preact";
 import { Search, Sparkles } from "lucide-preact";
 import { useApp } from "../context";
 import type { View } from "../types";
@@ -10,7 +11,7 @@ const STAGES: Array<{ view: View; label: string; path: string }> = [
   { view: "optimize", label: "Optimize", path: "/optimize" },
 ];
 
-export function Sidebar({ current, navigate }: { current: View; navigate: (p: string) => void }) {
+export function Sidebar({ current, navigate, card }: { current: View; navigate: (p: string) => void; card?: ComponentChildren }) {
   return (
     <aside class="sticky top-0 flex h-screen w-[260px] shrink-0 flex-col border-r border-border bg-surface">
       <button class="flex items-center gap-2 px-5 py-4" onClick={() => navigate("/produce")}>
@@ -37,6 +38,7 @@ export function Sidebar({ current, navigate }: { current: View; navigate: (p: st
 
       <div class="mt-auto space-y-2 p-3">
         <ConnectionStatus />
+        {card}
       </div>
     </aside>
   );
