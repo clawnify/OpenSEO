@@ -1,10 +1,9 @@
 onlyBuiltDependencies:
   - esbuild
   - workerd
-overrides:
-  react: npm:@preact/compat@^10.25.0
-  react-dom: npm:@preact/compat@^10.25.0
 allowBuilds:
   esbuild: true
   sharp: false
   workerd: true
+minimumReleaseAgeExclude:
+  - '@clawnify/app@0.4.8'

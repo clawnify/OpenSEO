@@ -37,12 +37,11 @@ export function App() {
   return (
     <AppContext.Provider value={appState}>
       <div class="flex min-h-screen">
-        {embedded ? (
-          <AppNav title="SEO" icon="search" active={activeStage} groups={HOST_NAV}
-            onNavigate={(item) => navigate(item.href!)} />
-        ) : (
-          <Sidebar current={activeStage} navigate={navigate} />
-        )}
+        {/* One <AppNav>: inside Clawnify the dashboard draws this navigation,
+            and anywhere else the app's own sidebar is drawn from it. */}
+        <AppNav title="SEO" icon="search" active={activeStage} groups={HOST_NAV}
+          onNavigate={(item) => navigate(item.href!)}
+          standalone={(nav) => <Sidebar current={activeStage} navigate={navigate} card={nav.card} />} />
         <main class="min-w-0 flex-1 overflow-auto">
           {embedded && <ConnectionStatus inline />}
           {appState.loading ? (
